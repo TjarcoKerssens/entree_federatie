@@ -14,6 +14,7 @@
 		8672BC2522DC6F14001D599D /* Entree_FederatieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC2422DC6F14001D599D /* Entree_FederatieTests.swift */; };
 		8672BC3022DC7DD0001D599D /* SamlLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC2F22DC7DD0001D599D /* SamlLoginViewController.swift */; };
 		8672BC3422DCA298001D599D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3322DCA298001D599D /* MainViewController.swift */; };
+		8672BC3722DCAF10001D599D /* HTTPCookieArchiving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3622DCAF10001D599D /* HTTPCookieArchiving.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		8672BC2622DC6F14001D599D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8672BC2F22DC7DD0001D599D /* SamlLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamlLoginViewController.swift; sourceTree = "<group>"; };
 		8672BC3322DCA298001D599D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8672BC3622DCAF10001D599D /* HTTPCookieArchiving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPCookieArchiving.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		8672BC0E22DC6F13001D599D /* Entree Federatie */ = {
 			isa = PBXGroup;
 			children = (
+				8672BC3522DCAEF2001D599D /* Extensions */,
 				8672BC3222DC9A98001D599D /* Controllers */,
 				8672BC3122DC9A45001D599D /* SupportFiles */,
 			);
@@ -113,6 +116,14 @@
 				8672BC3322DCA298001D599D /* MainViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8672BC3522DCAEF2001D599D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8672BC3622DCAF10001D599D /* HTTPCookieArchiving.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8672BC3422DCA298001D599D /* MainViewController.swift in Sources */,
+				8672BC3722DCAF10001D599D /* HTTPCookieArchiving.swift in Sources */,
 				8672BC3022DC7DD0001D599D /* SamlLoginViewController.swift in Sources */,
 				8672BC1022DC6F13001D599D /* AppDelegate.swift in Sources */,
 			);
