@@ -20,9 +20,50 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="Xoo-v1-uEj" kind="show" identifier="MainScreenSegue" id="GZ0-FV-8hI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="Xsx-JZ-5Yz">
+            <objects>
+                <viewController id="Xoo-v1-uEj" customClass="MainViewController" customModule="Entree_Federatie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Md7-81-0N8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welkom bij de Entree Federatie!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSW-9i-e0G">
+                                <rect key="frame" x="85.5" y="471.5" width="243" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ah-Eg-lCR">
+                                <rect key="frame" x="165" y="442.5" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mSW-9i-e0G" firstAttribute="top" secondItem="5Ah-Eg-lCR" secondAttribute="bottom" constant="8" id="FLd-G4-wiI"/>
+                            <constraint firstItem="5Ah-Eg-lCR" firstAttribute="centerX" secondItem="B95-C5-X8V" secondAttribute="centerX" id="W3r-g9-5UL"/>
+                            <constraint firstItem="5Ah-Eg-lCR" firstAttribute="centerY" secondItem="B95-C5-X8V" secondAttribute="centerY" id="pWR-8x-KBq"/>
+                            <constraint firstItem="mSW-9i-e0G" firstAttribute="centerX" secondItem="B95-C5-X8V" secondAttribute="centerX" id="zjW-DT-QEy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B95-C5-X8V"/>
+                    </view>
+                    <connections>
+                        <outlet property="usernameLabel" destination="5Ah-Eg-lCR" id="ozZ-KG-Fdv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQt-vt-BSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1494" y="19"/>
         </scene>
     </scenes>
 </document>

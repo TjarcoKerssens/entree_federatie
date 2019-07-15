@@ -12,7 +12,9 @@ import UIKit
 import WebKit
 
 let AUTH_ENDPOINT = "https://referentie.entree.kennisnet.nl/saml/module.php/core/authenticate.php?as=RefSPSAML"
+
 let SAML_SESSION_COOKIE = "SimpleSAMLSessionID"
+let UID_COOKIE = "aselect_uid"
 
 /**
     This class shows the login page for the entree application in a webview.
@@ -47,12 +49,16 @@ class SamlLoginViewController: UIViewController, WKHTTPCookieStoreObserver {
     func cookiesDidChange(in cookieStore: WKHTTPCookieStore) {
         cookieStore.getAllCookies { (cookies) in
             if cookies.contains(where: {$0.name == SAML_SESSION_COOKIE}){
-                self.authenticated()
+                self.authenticated(withCookies: cookies)
             }
         }
     }
     
-    private func authenticated(){
+    private func authenticated(withCookies cookies: [HTTPCookie]){
         print("User is authenticated")
+        guard let userId = cookies.first(where: {$0.name == UID_COOKIE})?.value else{ return }
+        let username = String(userId.split(separator: "@").first ?? "Unknown").replacingOccurrences(of: "\"", with: "", options: .literal, range: nil)
+        UserDefaults.standard.set(username, forKey: "Username")
+        self.performSegue(withIdentifier: "MainScreenSegue", sender: nil)
     }
 }

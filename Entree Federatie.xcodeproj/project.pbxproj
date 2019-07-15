@@ -13,6 +13,7 @@
 		8672BC1A22DC6F14001D599D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8672BC1822DC6F14001D599D /* LaunchScreen.storyboard */; };
 		8672BC2522DC6F14001D599D /* Entree_FederatieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC2422DC6F14001D599D /* Entree_FederatieTests.swift */; };
 		8672BC3022DC7DD0001D599D /* SamlLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC2F22DC7DD0001D599D /* SamlLoginViewController.swift */; };
+		8672BC3422DCA298001D599D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3322DCA298001D599D /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		8672BC2422DC6F14001D599D /* Entree_FederatieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entree_FederatieTests.swift; sourceTree = "<group>"; };
 		8672BC2622DC6F14001D599D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8672BC2F22DC7DD0001D599D /* SamlLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamlLoginViewController.swift; sourceTree = "<group>"; };
+		8672BC3322DCA298001D599D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				8672BC1322DC6F13001D599D /* Main.storyboard */,
 				8672BC1822DC6F14001D599D /* LaunchScreen.storyboard */,
 				8672BC2F22DC7DD0001D599D /* SamlLoginViewController.swift */,
+				8672BC3322DCA298001D599D /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8672BC3422DCA298001D599D /* MainViewController.swift in Sources */,
 				8672BC3022DC7DD0001D599D /* SamlLoginViewController.swift in Sources */,
 				8672BC1022DC6F13001D599D /* AppDelegate.swift in Sources */,
 			);
