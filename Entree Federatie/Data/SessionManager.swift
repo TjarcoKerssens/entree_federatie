@@ -35,6 +35,16 @@ class SessionManager: NSObject, WKHTTPCookieStoreObserver{
         }
     }
     
+    func removeSession(){
+        let defaults = UserDefaults.standard
+        guard let keys = defaults.stringArray(forKey: COOKIE_KEYS) else {return }
+        for key in keys{
+            defaults.removeObject(forKey: key)
+        }
+        
+        defaults.removeObject(forKey: COOKIE_KEYS)
+    }
+    
     func cookiesDidChange(in cookieStore: WKHTTPCookieStore) {
         cookieStore.getAllCookies { (cookies) in
             if self.userSessionCookieIsSet(inCookies: cookies){
