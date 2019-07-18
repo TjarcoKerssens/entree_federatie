@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68A4F8548F7E10110624727B /* Pods_Entree_FederatieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00501DA25FCF7EF427443960 /* Pods_Entree_FederatieTests.framework */; };
 		8672BC1022DC6F13001D599D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC0F22DC6F13001D599D /* AppDelegate.swift */; };
 		8672BC1522DC6F13001D599D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8672BC1322DC6F13001D599D /* Main.storyboard */; };
 		8672BC1722DC6F14001D599D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8672BC1622DC6F14001D599D /* Assets.xcassets */; };
@@ -16,6 +17,9 @@
 		8672BC3422DCA298001D599D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3322DCA298001D599D /* MainViewController.swift */; };
 		8672BC3722DCAF10001D599D /* HTTPCookieArchiving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3622DCAF10001D599D /* HTTPCookieArchiving.swift */; };
 		8672BC3A22DCC027001D599D /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3922DCC027001D599D /* SessionManager.swift */; };
+		8672BC3C22E06A2C001D599D /* SessionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3B22E06A2C001D599D /* SessionStorage.swift */; };
+		86BD568F22E0A15D0001E1E0 /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BD568E22E0A15D0001E1E0 /* HTTPManager.swift */; };
+		C90921C2C2CA66288DE056EA /* Pods_Entree_Federatie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE43DAD0A2427068DBC186F1 /* Pods_Entree_Federatie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00501DA25FCF7EF427443960 /* Pods_Entree_FederatieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Entree_FederatieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F688BBB052F24DCE3629843 /* Pods-Entree FederatieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Entree FederatieTests.release.xcconfig"; path = "Target Support Files/Pods-Entree FederatieTests/Pods-Entree FederatieTests.release.xcconfig"; sourceTree = "<group>"; };
+		1EAB7D31ED95E4572355B6AF /* Pods-Entree Federatie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Entree Federatie.release.xcconfig"; path = "Target Support Files/Pods-Entree Federatie/Pods-Entree Federatie.release.xcconfig"; sourceTree = "<group>"; };
+		37D3E50F9788867767B7AFB6 /* Pods-Entree Federatie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Entree Federatie.debug.xcconfig"; path = "Target Support Files/Pods-Entree Federatie/Pods-Entree Federatie.debug.xcconfig"; sourceTree = "<group>"; };
 		8672BC0C22DC6F13001D599D /* Entree Federatie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Entree Federatie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8672BC0F22DC6F13001D599D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8672BC1422DC6F13001D599D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +50,11 @@
 		8672BC3322DCA298001D599D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8672BC3622DCAF10001D599D /* HTTPCookieArchiving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPCookieArchiving.swift; sourceTree = "<group>"; };
 		8672BC3922DCC027001D599D /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		8672BC3B22E06A2C001D599D /* SessionStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStorage.swift; sourceTree = "<group>"; };
+		86BD568D22E077060001E1E0 /* Entree Federatie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Entree Federatie.entitlements"; sourceTree = "<group>"; };
+		86BD568E22E0A15D0001E1E0 /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
+		BE43DAD0A2427068DBC186F1 /* Pods_Entree_Federatie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Entree_Federatie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B75A6617D4A0E762F08124 /* Pods-Entree FederatieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Entree FederatieTests.debug.xcconfig"; path = "Target Support Files/Pods-Entree FederatieTests/Pods-Entree FederatieTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C90921C2C2CA66288DE056EA /* Pods_Entree_Federatie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A4F8548F7E10110624727B /* Pods_Entree_FederatieTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +83,8 @@
 				8672BC0E22DC6F13001D599D /* Entree Federatie */,
 				8672BC2322DC6F14001D599D /* Entree FederatieTests */,
 				8672BC0D22DC6F13001D599D /* Products */,
+				CC88A4EBA3174FF0BDBBBFDB /* Pods */,
+				870D832DE6BEA1EE7F65F490 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +100,7 @@
 		8672BC0E22DC6F13001D599D /* Entree Federatie */ = {
 			isa = PBXGroup;
 			children = (
+				86BD568D22E077060001E1E0 /* Entree Federatie.entitlements */,
 				8672BC3822DCC016001D599D /* Data */,
 				8672BC3522DCAEF2001D599D /* Extensions */,
 				8672BC3222DC9A98001D599D /* Controllers */,
@@ -133,8 +151,30 @@
 			isa = PBXGroup;
 			children = (
 				8672BC3922DCC027001D599D /* SessionManager.swift */,
+				8672BC3B22E06A2C001D599D /* SessionStorage.swift */,
+				86BD568E22E0A15D0001E1E0 /* HTTPManager.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		870D832DE6BEA1EE7F65F490 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE43DAD0A2427068DBC186F1 /* Pods_Entree_Federatie.framework */,
+				00501DA25FCF7EF427443960 /* Pods_Entree_FederatieTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC88A4EBA3174FF0BDBBBFDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37D3E50F9788867767B7AFB6 /* Pods-Entree Federatie.debug.xcconfig */,
+				1EAB7D31ED95E4572355B6AF /* Pods-Entree Federatie.release.xcconfig */,
+				F0B75A6617D4A0E762F08124 /* Pods-Entree FederatieTests.debug.xcconfig */,
+				0F688BBB052F24DCE3629843 /* Pods-Entree FederatieTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8672BC2922DC6F14001D599D /* Build configuration list for PBXNativeTarget "Entree Federatie" */;
 			buildPhases = (
+				2D99EAF1E504CCECCEF615B8 /* [CP] Check Pods Manifest.lock */,
 				8672BC0822DC6F13001D599D /* Sources */,
 				8672BC0922DC6F13001D599D /* Frameworks */,
 				8672BC0A22DC6F13001D599D /* Resources */,
+				ABE0CBB8BBA0FE301AEB0279 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8672BC2C22DC6F14001D599D /* Build configuration list for PBXNativeTarget "Entree FederatieTests" */;
 			buildPhases = (
+				D1EB2A8F16512A3E3FB7B8BF /* [CP] Check Pods Manifest.lock */,
 				8672BC1C22DC6F14001D599D /* Sources */,
 				8672BC1D22DC6F14001D599D /* Frameworks */,
 				8672BC1E22DC6F14001D599D /* Resources */,
@@ -187,6 +230,11 @@
 				TargetAttributes = {
 					8672BC0B22DC6F13001D599D = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					8672BC1F22DC6F14001D599D = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -233,15 +281,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D99EAF1E504CCECCEF615B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Entree Federatie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABE0CBB8BBA0FE301AEB0279 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Entree Federatie/Pods-Entree Federatie-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Entree Federatie/Pods-Entree Federatie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1EB2A8F16512A3E3FB7B8BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Entree FederatieTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8672BC0822DC6F13001D599D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86BD568F22E0A15D0001E1E0 /* HTTPManager.swift in Sources */,
 				8672BC3422DCA298001D599D /* MainViewController.swift in Sources */,
 				8672BC3722DCAF10001D599D /* HTTPCookieArchiving.swift in Sources */,
 				8672BC3022DC7DD0001D599D /* SamlLoginViewController.swift in Sources */,
 				8672BC3A22DCC027001D599D /* SessionManager.swift in Sources */,
+				8672BC3C22E06A2C001D599D /* SessionStorage.swift in Sources */,
 				8672BC1022DC6F13001D599D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,8 +521,10 @@
 		};
 		8672BC2A22DC6F14001D599D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37D3E50F9788867767B7AFB6 /* Pods-Entree Federatie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Entree Federatie/Entree Federatie.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HBX6JETZQ9;
 				INFOPLIST_FILE = "Entree Federatie/SupportFiles/Info.plist";
@@ -420,8 +541,10 @@
 		};
 		8672BC2B22DC6F14001D599D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EAB7D31ED95E4572355B6AF /* Pods-Entree Federatie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Entree Federatie/Entree Federatie.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HBX6JETZQ9;
 				INFOPLIST_FILE = "Entree Federatie/SupportFiles/Info.plist";
@@ -438,6 +561,7 @@
 		};
 		8672BC2D22DC6F14001D599D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0B75A6617D4A0E762F08124 /* Pods-Entree FederatieTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -459,6 +583,7 @@
 		};
 		8672BC2E22DC6F14001D599D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F688BBB052F24DCE3629843 /* Pods-Entree FederatieTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -1,0 +1,6 @@
+framework module Pods_Entree_Federatie {
+  umbrella header "Pods-Entree Federatie-umbrella.h"
+
+  export *
+  module * { export * }
+}

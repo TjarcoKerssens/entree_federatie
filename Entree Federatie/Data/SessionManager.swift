@@ -22,11 +22,18 @@ class SessionManager: NSObject, WKHTTPCookieStoreObserver{
     
     var username = ""
     var handler: SAMLAuthenticationHandler?
-    
+    let storage = SessionStorage()
+    let httpManager = HTTPManager()
     
     static let shared = SessionManager()
     private override init() {}
     
+    /**
+     Checks whether there is a valid session and calls the handler when this is known.
+     
+     First, the session is loaded from the keychain, if it does not exists, the handler is called with false.
+     If it does exist, the session is validated (see `validateSession(withCookies cookies: [HTTPCookie])`).
+     */
     func checkSavedSession(){
         if let cookies = loadCookies() {
             self.authenticate(withCookies: cookies)
@@ -35,16 +42,25 @@ class SessionManager: NSObject, WKHTTPCookieStoreObserver{
         }
     }
     
-    func removeSession(){
-        let defaults = UserDefaults.standard
-        guard let keys = defaults.stringArray(forKey: COOKIE_KEYS) else {return }
-        for key in keys{
-            defaults.removeObject(forKey: key)
+    /**
+        If the user id cookie is present, it can be validated.
+    */
+    private func authenticate(withCookies cookies: [HTTPCookie]){
+        if userSessionCookieIsSet(inCookies: cookies){
+            setUsername(withCookies: cookies)
+            validateSession(withCookies: cookies)
+        }else{
+            handler?.authenticated(false)
         }
-        
-        defaults.removeObject(forKey: COOKIE_KEYS)
     }
     
+    func removeSession(){
+        storage.remove()
+    }
+    
+    /**
+        Delegate function  for the Cookie Observer. If there is a change in the cookies of the webview, this function will be called.
+     */
     func cookiesDidChange(in cookieStore: WKHTTPCookieStore) {
         cookieStore.getAllCookies { (cookies) in
             if self.userSessionCookieIsSet(inCookies: cookies){
@@ -55,71 +71,46 @@ class SessionManager: NSObject, WKHTTPCookieStoreObserver{
         }
     }
     
-    private func authenticate(withCookies cookies: [HTTPCookie]){
-        if userSessionCookieIsSet(inCookies: cookies){
-            setUsername(withCookies: cookies)
-            validateSession(withCookies: cookies)
-        }else{
-            handler?.authenticated(false)
-        }
-    }
+
     
     private func userSessionCookieIsSet(inCookies cookies: [HTTPCookie]) -> Bool{
         return cookies.contains(where: {$0.name == UID_COOKIE})
     }
     
+    /**
+        Validate the session against an endpoint that return true if the session is valid
+     
+        The handler will be called with the information whether the session is valid.
+     */
     private func validateSession(withCookies cookies: [HTTPCookie]){
-        
-        guard let url = URL(string: VALIDATION_ENDPOINT) else {return}
-        
-        HTTPCookieStorage.shared.setCookies(cookies, for: url, mainDocumentURL: url)
-
-        let session = URLSession(configuration: .default)
-        let dataTask = session.dataTask(with: url) { (data, response, error) in
-            guard let data = data else {return}
-            do{
-                guard let json = try JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary else { return }
-                guard let validSession = json["result"] as? String else {return}
-                self.handler?.authenticated(validSession.boolValue)
-            }catch let error as NSError{
-                print("Error validating session: \(error.debugDescription)")
-                DispatchQueue.main.async {
+        httpManager.getJSON(url: VALIDATION_ENDPOINT) { (json, error) in
+            if let error = error {
+                print("Could not validate the session: \(error.localizedDescription)")
+                self.handler?.authenticated(false)
+            }else{
+                guard let validSession = json?["result"] as? String else {
                     self.handler?.authenticated(false)
+                    return
                 }
+                self.handler?.authenticated(validSession.boolValue)
             }
         }
-
-        dataTask.resume()
     }
     
     private func saveCookies(_ cookies: [HTTPCookie]){
-        let userDefaults = UserDefaults.standard
-        let keys = cookies.map {$0.name}
-        userDefaults.set(keys, forKey: COOKIE_KEYS)
-        
-        for cookie in cookies {
-            guard let cookieArchive = cookie.archive() else {continue}
-            userDefaults.set(cookieArchive, forKey: cookie.name)
-        }
+        storage.set(cookies: cookies)
     }
     
+    /*
+        Parse the cookies to retrieve the username of the active user. The username is then accessible on this object.
+     */
     private func setUsername(withCookies cookies: [HTTPCookie]){
         guard let userId = cookies.first(where: {$0.name == UID_COOKIE})?.value else{ return }
         username = String(userId.split(separator: "@").first ?? "Unknown").replacingOccurrences(of: "\"", with: "", options: .literal, range: nil)
     }
     
     private func loadCookies() -> [HTTPCookie]?{
-        let userDefaults = UserDefaults.standard
-        guard let keys = userDefaults.stringArray(forKey: COOKIE_KEYS) else {return nil}
-        
-        var cookies: [HTTPCookie] = []
-        for key in keys {
-            guard let cookieData = userDefaults.data(forKey: key) else {continue}
-            guard let cookie = HTTPCookie.loadCookie(using: cookieData) else {continue}
-            cookies.append(cookie)
-        }
-        
-        return cookies
+        return storage.get()?.cookies
     }
 }
 

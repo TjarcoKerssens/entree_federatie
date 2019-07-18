@@ -1,0 +1,16 @@
+PODS:
+  - KeychainSwift (15.0.0)
+
+DEPENDENCIES:
+  - KeychainSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KeychainSwift
+
+SPEC CHECKSUMS:
+  KeychainSwift: c6fc018d287804faf1ce3f258a1e51a7178c8382
+
+PODFILE CHECKSUM: 5fc6276ed92952ad0f73a3a57f6901982c9f9a27
+
+COCOAPODS: 1.6.1

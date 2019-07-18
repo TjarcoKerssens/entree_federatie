@@ -23,7 +23,6 @@ class SamlLoginViewController: UIViewController, SAMLAuthenticationHandler{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         sessionManager.handler = self
     }
     
@@ -47,10 +46,12 @@ class SamlLoginViewController: UIViewController, SAMLAuthenticationHandler{
     }
     
     func authenticated(_ success: Bool) {
-        if success {
-            performSegue(withIdentifier: "MainScreenSegue", sender: nil)
-        }else{
-            openAuthPage()
+        DispatchQueue.main.async {
+            if success {
+                self.performSegue(withIdentifier: "MainScreenSegue", sender: nil)
+            }else{
+                self.openAuthPage()
+            }
         }
     }
 }
