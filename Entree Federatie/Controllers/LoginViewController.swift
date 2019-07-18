@@ -1,5 +1,5 @@
 //
-//  SamlLoginViewController.swift
+//  LoginViewController.swift
 //  Entree Federatie
 //
 //  Created by Tjarco Kerssens on 15/07/2019.
@@ -17,9 +17,10 @@ let AUTH_ENDPOINT = "https://referentie.entree.kennisnet.nl/saml/module.php/core
     This class shows the login page for the entree application in a webview.
     When the user is authenticated, the application resumes to the next screen
  */
-class SamlLoginViewController: UIViewController, SAMLAuthenticationHandler{
+class LoginViewController: UIViewController, SAMLAuthenticationHandler, WKNavigationDelegate{
     var webView: WKWebView?
     let sessionManager = SessionManager.shared
+    var authenticated = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +29,13 @@ class SamlLoginViewController: UIViewController, SAMLAuthenticationHandler{
     
     override func loadView() {
         super.loadView()
-        WKWebsiteDataStore.default().httpCookieStore.add(sessionManager)
-
         self.webView = WKWebView(frame: self.view.bounds)
+        if let cookies = SessionStorage().get()?.cookies {
+            for cookie in cookies{
+                webView?.configuration.websiteDataStore.httpCookieStore.setCookie(cookie)
+            }
+        }
+        self.webView?.navigationDelegate = self
         self.view = self.webView
     }
     
@@ -48,10 +53,29 @@ class SamlLoginViewController: UIViewController, SAMLAuthenticationHandler{
     func authenticated(_ success: Bool) {
         DispatchQueue.main.async {
             if success {
-                self.performSegue(withIdentifier: "MainScreenSegue", sender: nil)
+                if (!self.authenticated){
+                    self.authenticated = true
+                    self.openAuthPage()
+                }
             }else{
                 self.openAuthPage()
             }
+        }
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        if (authenticated) {
+            let parser = HTMLParser(webView: self.webView!)
+            parser.parseReferentie(completionHandler: { (properties) in
+                self.performSegue(withIdentifier: "MainScreenSegue", sender: properties)
+            })
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MainScreenSegue" {
+            let mainVc = segue.destination as! MainViewController
+            mainVc.properties = sender as? ReferentieProperties
         }
     }
 }

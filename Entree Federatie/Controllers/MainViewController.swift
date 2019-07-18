@@ -10,15 +10,25 @@ import UIKit
 
 class MainViewController: UIViewController {
     @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var uidLabel: UILabel!
+    @IBOutlet weak var fullNameLabel: UILabel!
+    @IBOutlet weak var mailLabel: UILabel!
+    @IBOutlet weak var eduPersonIdLabel: UILabel!
+    
+    var properties: ReferentieProperties?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUsername()
+        setProperties()
     }
     
-    private func setUsername(){
-        let username = SessionManager.shared.username
-        usernameLabel.text = "Hoi \(username),"
+    private func setProperties(){
+        guard let properties = properties else {return}
+        usernameLabel.text = "Hi \(properties.givenName)!"
+        uidLabel.text = "uid: \(properties.uid)"
+        fullNameLabel.text = "Full name: \(properties.givenName ) \(properties.sn)"
+        mailLabel.text = "Mail: \(properties.mail)"
+        eduPersonIdLabel.text = "nlEduPersonRealId: \(properties.nlEduPersonRealId)"
     }
     
     @IBAction func logout(_ sender: Any) {

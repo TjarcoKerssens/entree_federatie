@@ -19,14 +19,15 @@ protocol SAMLAuthenticationHandler{
 }
 
 class SessionManager: NSObject, WKHTTPCookieStoreObserver{
-    
-    var username = ""
     var handler: SAMLAuthenticationHandler?
     let storage = SessionStorage()
     let httpManager = HTTPManager()
     
     static let shared = SessionManager()
-    private override init() {}
+    private override init() {
+        super.init()
+        WKWebsiteDataStore.default().httpCookieStore.add(self)
+    }
     
     /**
      Checks whether there is a valid session and calls the handler when this is known.
@@ -47,7 +48,6 @@ class SessionManager: NSObject, WKHTTPCookieStoreObserver{
     */
     private func authenticate(withCookies cookies: [HTTPCookie]){
         if userSessionCookieIsSet(inCookies: cookies){
-            setUsername(withCookies: cookies)
             validateSession(withCookies: cookies)
         }else{
             handler?.authenticated(false)
@@ -65,7 +65,6 @@ class SessionManager: NSObject, WKHTTPCookieStoreObserver{
         cookieStore.getAllCookies { (cookies) in
             if self.userSessionCookieIsSet(inCookies: cookies){
                 self.saveCookies(cookies)
-                self.setUsername(withCookies: cookies)
                 self.handler?.authenticated(true)
             }
         }
@@ -99,14 +98,6 @@ class SessionManager: NSObject, WKHTTPCookieStoreObserver{
     
     private func saveCookies(_ cookies: [HTTPCookie]){
         storage.set(cookies: cookies)
-    }
-    
-    /*
-        Parse the cookies to retrieve the username of the active user. The username is then accessible on this object.
-     */
-    private func setUsername(withCookies cookies: [HTTPCookie]){
-        guard let userId = cookies.first(where: {$0.name == UID_COOKIE})?.value else{ return }
-        username = String(userId.split(separator: "@").first ?? "Unknown").replacingOccurrences(of: "\"", with: "", options: .literal, range: nil)
     }
     
     private func loadCookies() -> [HTTPCookie]?{

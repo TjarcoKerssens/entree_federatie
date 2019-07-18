@@ -13,12 +13,15 @@
 		8672BC1722DC6F14001D599D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8672BC1622DC6F14001D599D /* Assets.xcassets */; };
 		8672BC1A22DC6F14001D599D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8672BC1822DC6F14001D599D /* LaunchScreen.storyboard */; };
 		8672BC2522DC6F14001D599D /* Entree_FederatieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC2422DC6F14001D599D /* Entree_FederatieTests.swift */; };
-		8672BC3022DC7DD0001D599D /* SamlLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC2F22DC7DD0001D599D /* SamlLoginViewController.swift */; };
+		8672BC3022DC7DD0001D599D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC2F22DC7DD0001D599D /* LoginViewController.swift */; };
 		8672BC3422DCA298001D599D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3322DCA298001D599D /* MainViewController.swift */; };
 		8672BC3722DCAF10001D599D /* HTTPCookieArchiving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3622DCAF10001D599D /* HTTPCookieArchiving.swift */; };
 		8672BC3A22DCC027001D599D /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3922DCC027001D599D /* SessionManager.swift */; };
 		8672BC3C22E06A2C001D599D /* SessionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3B22E06A2C001D599D /* SessionStorage.swift */; };
 		86BD568F22E0A15D0001E1E0 /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BD568E22E0A15D0001E1E0 /* HTTPManager.swift */; };
+		86E1B09022E0A993001ED349 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E1B08F22E0A993001ED349 /* HTMLParser.swift */; };
+		86E1B09322E0AA1B001ED349 /* ReferentieProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E1B09222E0AA1B001ED349 /* ReferentieProperties.swift */; };
+		86E1B09522E0AB00001ED349 /* ReadReferentieProperties.js in Resources */ = {isa = PBXBuildFile; fileRef = 86E1B09422E0AB00001ED349 /* ReadReferentieProperties.js */; };
 		C90921C2C2CA66288DE056EA /* Pods_Entree_Federatie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE43DAD0A2427068DBC186F1 /* Pods_Entree_Federatie.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,13 +49,16 @@
 		8672BC2022DC6F14001D599D /* Entree FederatieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Entree FederatieTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8672BC2422DC6F14001D599D /* Entree_FederatieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entree_FederatieTests.swift; sourceTree = "<group>"; };
 		8672BC2622DC6F14001D599D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8672BC2F22DC7DD0001D599D /* SamlLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamlLoginViewController.swift; sourceTree = "<group>"; };
+		8672BC2F22DC7DD0001D599D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8672BC3322DCA298001D599D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8672BC3622DCAF10001D599D /* HTTPCookieArchiving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPCookieArchiving.swift; sourceTree = "<group>"; };
 		8672BC3922DCC027001D599D /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		8672BC3B22E06A2C001D599D /* SessionStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStorage.swift; sourceTree = "<group>"; };
 		86BD568D22E077060001E1E0 /* Entree Federatie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Entree Federatie.entitlements"; sourceTree = "<group>"; };
 		86BD568E22E0A15D0001E1E0 /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
+		86E1B08F22E0A993001ED349 /* HTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
+		86E1B09222E0AA1B001ED349 /* ReferentieProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferentieProperties.swift; sourceTree = "<group>"; };
+		86E1B09422E0AB00001ED349 /* ReadReferentieProperties.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = ReadReferentieProperties.js; sourceTree = "<group>"; };
 		BE43DAD0A2427068DBC186F1 /* Pods_Entree_Federatie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Entree_Federatie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0B75A6617D4A0E762F08124 /* Pods-Entree FederatieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Entree FederatieTests.debug.xcconfig"; path = "Target Support Files/Pods-Entree FederatieTests/Pods-Entree FederatieTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,7 +139,7 @@
 			children = (
 				8672BC1322DC6F13001D599D /* Main.storyboard */,
 				8672BC1822DC6F14001D599D /* LaunchScreen.storyboard */,
-				8672BC2F22DC7DD0001D599D /* SamlLoginViewController.swift */,
+				8672BC2F22DC7DD0001D599D /* LoginViewController.swift */,
 				8672BC3322DCA298001D599D /* MainViewController.swift */,
 			);
 			path = Controllers;
@@ -150,11 +156,30 @@
 		8672BC3822DCC016001D599D /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				86E1B09122E0AA04001ED349 /* Models */,
+				86E1B08E22E0A97C001ED349 /* ParseHTML */,
 				8672BC3922DCC027001D599D /* SessionManager.swift */,
 				8672BC3B22E06A2C001D599D /* SessionStorage.swift */,
 				86BD568E22E0A15D0001E1E0 /* HTTPManager.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		86E1B08E22E0A97C001ED349 /* ParseHTML */ = {
+			isa = PBXGroup;
+			children = (
+				86E1B08F22E0A993001ED349 /* HTMLParser.swift */,
+				86E1B09422E0AB00001ED349 /* ReadReferentieProperties.js */,
+			);
+			path = ParseHTML;
+			sourceTree = "<group>";
+		};
+		86E1B09122E0AA04001ED349 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86E1B09222E0AA1B001ED349 /* ReferentieProperties.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		870D832DE6BEA1EE7F65F490 /* Frameworks */ = {
@@ -266,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E1B09522E0AB00001ED349 /* ReadReferentieProperties.js in Resources */,
 				8672BC1A22DC6F14001D599D /* LaunchScreen.storyboard in Resources */,
 				8672BC1722DC6F14001D599D /* Assets.xcassets in Resources */,
 				8672BC1522DC6F13001D599D /* Main.storyboard in Resources */,
@@ -358,8 +384,10 @@
 				86BD568F22E0A15D0001E1E0 /* HTTPManager.swift in Sources */,
 				8672BC3422DCA298001D599D /* MainViewController.swift in Sources */,
 				8672BC3722DCAF10001D599D /* HTTPCookieArchiving.swift in Sources */,
-				8672BC3022DC7DD0001D599D /* SamlLoginViewController.swift in Sources */,
+				8672BC3022DC7DD0001D599D /* LoginViewController.swift in Sources */,
 				8672BC3A22DCC027001D599D /* SessionManager.swift in Sources */,
+				86E1B09322E0AA1B001ED349 /* ReferentieProperties.swift in Sources */,
+				86E1B09022E0A993001ED349 /* HTMLParser.swift in Sources */,
 				8672BC3C22E06A2C001D599D /* SessionStorage.swift in Sources */,
 				8672BC1022DC6F13001D599D /* AppDelegate.swift in Sources */,
 			);
