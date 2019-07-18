@@ -70,8 +70,6 @@ class SessionManager: NSObject, WKHTTPCookieStoreObserver{
         }
     }
     
-
-    
     private func userSessionCookieIsSet(inCookies cookies: [HTTPCookie]) -> Bool{
         return cookies.contains(where: {$0.name == UID_COOKIE})
     }
@@ -96,12 +94,27 @@ class SessionManager: NSObject, WKHTTPCookieStoreObserver{
         }
     }
     
+    func loadCookiesInto(webView: WKWebView){
+        if let cookies = loadCookies(){
+            webView.setCookies(cookies)
+        }
+    }
+    
     private func saveCookies(_ cookies: [HTTPCookie]){
         storage.set(cookies: cookies)
     }
     
     private func loadCookies() -> [HTTPCookie]?{
         return storage.get()?.cookies
+    }
+    
+}
+
+extension WKWebView{
+    func setCookies(_ cookies: [HTTPCookie]){
+        for cookie in cookies{
+            configuration.websiteDataStore.httpCookieStore.setCookie(cookie)
+        }
     }
 }
 

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_Entree_FederatieTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Entree_FederatieTestsVersionString[];
+FOUNDATION_EXPORT double Pods_WikiWijsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_WikiWijsVersionString[];
 

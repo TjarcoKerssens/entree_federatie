@@ -30,11 +30,7 @@ class LoginViewController: UIViewController, SAMLAuthenticationHandler, WKNaviga
     override func loadView() {
         super.loadView()
         self.webView = WKWebView(frame: self.view.bounds)
-        if let cookies = SessionStorage().get()?.cookies {
-            for cookie in cookies{
-                webView?.configuration.websiteDataStore.httpCookieStore.setCookie(cookie)
-            }
-        }
+        sessionManager.loadCookiesInto(webView: webView!)
         self.webView?.navigationDelegate = self
         self.view = self.webView
     }

@@ -7,14 +7,35 @@
 //
 
 import UIKit
+import WebKit
+
+let AUTH_ENDPOINT = "https://maken.wikiwijs.nl/"
 
 class ViewController: UIViewController {
-
+    var webView: WKWebView?
+    let sessionManager = SessionManager.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
+    
+    override func loadView() {
+        super.loadView()
+        self.webView = WKWebView(frame: self.view.bounds)
+        sessionManager.loadCookiesInto(webView: webView!)
+        self.view = webView
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        openAuthPage()
+    }
+    
+    private func openAuthPage(){
+        if let url = URL(string: AUTH_ENDPOINT){
+            let request = URLRequest(url: url)
+            self.webView?.load(request)
+        }
+    }
 
 }
 

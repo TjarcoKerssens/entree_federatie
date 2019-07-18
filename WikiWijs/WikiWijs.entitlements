@@ -4,7 +4,7 @@
 <dict>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)kennisnet.WikiWijs</string>
+		<string>$(AppIdentifierPrefix)kennisnet.Entree-Federatie</string>
 	</array>
 </dict>
 </plist>

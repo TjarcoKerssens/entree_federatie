@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68A4F8548F7E10110624727B /* Pods_Entree_FederatieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00501DA25FCF7EF427443960 /* Pods_Entree_FederatieTests.framework */; };
+		5548CAC63C9379A9433C3FA4 /* Pods_WikiWijs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31722664788A040C7718106A /* Pods_WikiWijs.framework */; };
+		86453EC522E0F32E0092654E /* HTTPCookieArchiving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3622DCAF10001D599D /* HTTPCookieArchiving.swift */; };
 		8672BC1022DC6F13001D599D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC0F22DC6F13001D599D /* AppDelegate.swift */; };
 		8672BC1522DC6F13001D599D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8672BC1322DC6F13001D599D /* Main.storyboard */; };
 		8672BC1722DC6F14001D599D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8672BC1622DC6F14001D599D /* Assets.xcassets */; };
@@ -22,7 +23,15 @@
 		86E1B09022E0A993001ED349 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E1B08F22E0A993001ED349 /* HTMLParser.swift */; };
 		86E1B09322E0AA1B001ED349 /* ReferentieProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E1B09222E0AA1B001ED349 /* ReferentieProperties.swift */; };
 		86E1B09522E0AB00001ED349 /* ReadReferentieProperties.js in Resources */ = {isa = PBXBuildFile; fileRef = 86E1B09422E0AB00001ED349 /* ReadReferentieProperties.js */; };
-		C90921C2C2CA66288DE056EA /* Pods_Entree_Federatie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE43DAD0A2427068DBC186F1 /* Pods_Entree_Federatie.framework */; };
+		86E1B09D22E0E497001ED349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E1B09C22E0E497001ED349 /* AppDelegate.swift */; };
+		86E1B09F22E0E497001ED349 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E1B09E22E0E497001ED349 /* ViewController.swift */; };
+		86E1B0A222E0E497001ED349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E1B0A022E0E497001ED349 /* Main.storyboard */; };
+		86E1B0A422E0E498001ED349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86E1B0A322E0E498001ED349 /* Assets.xcassets */; };
+		86E1B0A722E0E498001ED349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E1B0A522E0E498001ED349 /* LaunchScreen.storyboard */; };
+		86E1B0AC22E0E4FB001ED349 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3922DCC027001D599D /* SessionManager.swift */; };
+		86E1B0AD22E0E4FB001ED349 /* SessionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3B22E06A2C001D599D /* SessionStorage.swift */; };
+		86E1B0AE22E0E4FB001ED349 /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BD568E22E0A15D0001E1E0 /* HTTPManager.swift */; };
+		FC9777F7E791851F1AE5BAF0 /* Pods_Entree_Federatie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F230D8425BDF4C5EEF3C7B /* Pods_Entree_Federatie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00501DA25FCF7EF427443960 /* Pods_Entree_FederatieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Entree_FederatieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F688BBB052F24DCE3629843 /* Pods-Entree FederatieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Entree FederatieTests.release.xcconfig"; path = "Target Support Files/Pods-Entree FederatieTests/Pods-Entree FederatieTests.release.xcconfig"; sourceTree = "<group>"; };
 		1EAB7D31ED95E4572355B6AF /* Pods-Entree Federatie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Entree Federatie.release.xcconfig"; path = "Target Support Files/Pods-Entree Federatie/Pods-Entree Federatie.release.xcconfig"; sourceTree = "<group>"; };
+		2E74737BBF73F5AC41C31135 /* Pods-WikiWijs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiWijs.release.xcconfig"; path = "Target Support Files/Pods-WikiWijs/Pods-WikiWijs.release.xcconfig"; sourceTree = "<group>"; };
+		31722664788A040C7718106A /* Pods_WikiWijs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WikiWijs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33721FB94FC1419A0CE61452 /* Pods-WikiWijs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiWijs.debug.xcconfig"; path = "Target Support Files/Pods-WikiWijs/Pods-WikiWijs.debug.xcconfig"; sourceTree = "<group>"; };
 		37D3E50F9788867767B7AFB6 /* Pods-Entree Federatie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Entree Federatie.debug.xcconfig"; path = "Target Support Files/Pods-Entree Federatie/Pods-Entree Federatie.debug.xcconfig"; sourceTree = "<group>"; };
+		61F230D8425BDF4C5EEF3C7B /* Pods_Entree_Federatie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Entree_Federatie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86453EC622E0F65F0092654E /* WikiWijs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WikiWijs.entitlements; sourceTree = "<group>"; };
 		8672BC0C22DC6F13001D599D /* Entree Federatie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Entree Federatie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8672BC0F22DC6F13001D599D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8672BC1422DC6F13001D599D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,8 +71,13 @@
 		86E1B08F22E0A993001ED349 /* HTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
 		86E1B09222E0AA1B001ED349 /* ReferentieProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferentieProperties.swift; sourceTree = "<group>"; };
 		86E1B09422E0AB00001ED349 /* ReadReferentieProperties.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = ReadReferentieProperties.js; sourceTree = "<group>"; };
-		BE43DAD0A2427068DBC186F1 /* Pods_Entree_Federatie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Entree_Federatie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0B75A6617D4A0E762F08124 /* Pods-Entree FederatieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Entree FederatieTests.debug.xcconfig"; path = "Target Support Files/Pods-Entree FederatieTests/Pods-Entree FederatieTests.debug.xcconfig"; sourceTree = "<group>"; };
+		86E1B09A22E0E497001ED349 /* WikiWijs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiWijs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86E1B09C22E0E497001ED349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		86E1B09E22E0E497001ED349 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		86E1B0A122E0E497001ED349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86E1B0A322E0E498001ED349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86E1B0A622E0E498001ED349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86E1B0A822E0E498001ED349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C90921C2C2CA66288DE056EA /* Pods_Entree_Federatie.framework in Frameworks */,
+				FC9777F7E791851F1AE5BAF0 /* Pods_Entree_Federatie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +93,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68A4F8548F7E10110624727B /* Pods_Entree_FederatieTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86E1B09722E0E497001ED349 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5548CAC63C9379A9433C3FA4 /* Pods_WikiWijs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +110,9 @@
 		8672BC0322DC6F13001D599D = {
 			isa = PBXGroup;
 			children = (
+				8672BC3822DCC016001D599D /* Data */,
+				8672BC3522DCAEF2001D599D /* Extensions */,
+				86E1B09B22E0E497001ED349 /* WikiWijs */,
 				8672BC0E22DC6F13001D599D /* Entree Federatie */,
 				8672BC2322DC6F14001D599D /* Entree FederatieTests */,
 				8672BC0D22DC6F13001D599D /* Products */,
@@ -99,6 +126,7 @@
 			children = (
 				8672BC0C22DC6F13001D599D /* Entree Federatie.app */,
 				8672BC2022DC6F14001D599D /* Entree FederatieTests.xctest */,
+				86E1B09A22E0E497001ED349 /* WikiWijs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,8 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				86BD568D22E077060001E1E0 /* Entree Federatie.entitlements */,
-				8672BC3822DCC016001D599D /* Data */,
-				8672BC3522DCAEF2001D599D /* Extensions */,
 				8672BC3222DC9A98001D599D /* Controllers */,
 				8672BC3122DC9A45001D599D /* SupportFiles */,
 			);
@@ -182,11 +208,41 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		86E1B09B22E0E497001ED349 /* WikiWijs */ = {
+			isa = PBXGroup;
+			children = (
+				86453EC622E0F65F0092654E /* WikiWijs.entitlements */,
+				86E1B0B122E0E51F001ED349 /* SupportFiles */,
+				86E1B0B022E0E516001ED349 /* Controllers */,
+			);
+			path = WikiWijs;
+			sourceTree = "<group>";
+		};
+		86E1B0B022E0E516001ED349 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				86E1B09E22E0E497001ED349 /* ViewController.swift */,
+				86E1B0A022E0E497001ED349 /* Main.storyboard */,
+				86E1B0A522E0E498001ED349 /* LaunchScreen.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		86E1B0B122E0E51F001ED349 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				86E1B09C22E0E497001ED349 /* AppDelegate.swift */,
+				86E1B0A322E0E498001ED349 /* Assets.xcassets */,
+				86E1B0A822E0E498001ED349 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
 		870D832DE6BEA1EE7F65F490 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BE43DAD0A2427068DBC186F1 /* Pods_Entree_Federatie.framework */,
-				00501DA25FCF7EF427443960 /* Pods_Entree_FederatieTests.framework */,
+				61F230D8425BDF4C5EEF3C7B /* Pods_Entree_Federatie.framework */,
+				31722664788A040C7718106A /* Pods_WikiWijs.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,8 +252,8 @@
 			children = (
 				37D3E50F9788867767B7AFB6 /* Pods-Entree Federatie.debug.xcconfig */,
 				1EAB7D31ED95E4572355B6AF /* Pods-Entree Federatie.release.xcconfig */,
-				F0B75A6617D4A0E762F08124 /* Pods-Entree FederatieTests.debug.xcconfig */,
-				0F688BBB052F24DCE3629843 /* Pods-Entree FederatieTests.release.xcconfig */,
+				33721FB94FC1419A0CE61452 /* Pods-WikiWijs.debug.xcconfig */,
+				2E74737BBF73F5AC41C31135 /* Pods-WikiWijs.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -213,7 +269,7 @@
 				8672BC0822DC6F13001D599D /* Sources */,
 				8672BC0922DC6F13001D599D /* Frameworks */,
 				8672BC0A22DC6F13001D599D /* Resources */,
-				ABE0CBB8BBA0FE301AEB0279 /* [CP] Embed Pods Frameworks */,
+				3AF25F56EE5CADA4D3D62EF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,7 +284,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8672BC2C22DC6F14001D599D /* Build configuration list for PBXNativeTarget "Entree FederatieTests" */;
 			buildPhases = (
-				D1EB2A8F16512A3E3FB7B8BF /* [CP] Check Pods Manifest.lock */,
 				8672BC1C22DC6F14001D599D /* Sources */,
 				8672BC1D22DC6F14001D599D /* Frameworks */,
 				8672BC1E22DC6F14001D599D /* Resources */,
@@ -242,6 +297,25 @@
 			productName = "Entree FederatieTests";
 			productReference = 8672BC2022DC6F14001D599D /* Entree FederatieTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		86E1B09922E0E497001ED349 /* WikiWijs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86E1B0AB22E0E498001ED349 /* Build configuration list for PBXNativeTarget "WikiWijs" */;
+			buildPhases = (
+				BCF90487DB370DEC43A97525 /* [CP] Check Pods Manifest.lock */,
+				86E1B09622E0E497001ED349 /* Sources */,
+				86E1B09722E0E497001ED349 /* Frameworks */,
+				86E1B09822E0E497001ED349 /* Resources */,
+				766E0D0DE63CD30F0CD3C7BA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WikiWijs;
+			productName = WikiWijs;
+			productReference = 86E1B09A22E0E497001ED349 /* WikiWijs.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -265,6 +339,14 @@
 						CreatedOnToolsVersion = 10.2.1;
 						TestTargetID = 8672BC0B22DC6F13001D599D;
 					};
+					86E1B09922E0E497001ED349 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
 				};
 			};
 			buildConfigurationList = 8672BC0722DC6F13001D599D /* Build configuration list for PBXProject "Entree Federatie" */;
@@ -282,6 +364,7 @@
 			targets = (
 				8672BC0B22DC6F13001D599D /* Entree Federatie */,
 				8672BC1F22DC6F14001D599D /* Entree FederatieTests */,
+				86E1B09922E0E497001ED349 /* WikiWijs */,
 			);
 		};
 /* End PBXProject section */
@@ -302,6 +385,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86E1B09822E0E497001ED349 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86E1B0A722E0E498001ED349 /* LaunchScreen.storyboard in Resources */,
+				86E1B0A422E0E498001ED349 /* Assets.xcassets in Resources */,
+				86E1B0A222E0E497001ED349 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +423,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ABE0CBB8BBA0FE301AEB0279 /* [CP] Embed Pods Frameworks */ = {
+		3AF25F56EE5CADA4D3D62EF7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,7 +445,29 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Entree Federatie/Pods-Entree Federatie-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D1EB2A8F16512A3E3FB7B8BF /* [CP] Check Pods Manifest.lock */ = {
+		766E0D0DE63CD30F0CD3C7BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WikiWijs/Pods-WikiWijs-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WikiWijs/Pods-WikiWijs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCF90487DB370DEC43A97525 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,7 +482,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Entree FederatieTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-WikiWijs-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -401,6 +516,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86E1B09622E0E497001ED349 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86E1B0AD22E0E4FB001ED349 /* SessionStorage.swift in Sources */,
+				86E1B09F22E0E497001ED349 /* ViewController.swift in Sources */,
+				86E1B0AE22E0E4FB001ED349 /* HTTPManager.swift in Sources */,
+				86453EC522E0F32E0092654E /* HTTPCookieArchiving.swift in Sources */,
+				86E1B09D22E0E497001ED349 /* AppDelegate.swift in Sources */,
+				86E1B0AC22E0E4FB001ED349 /* SessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -424,6 +552,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				8672BC1922DC6F14001D599D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		86E1B0A022E0E497001ED349 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86E1B0A122E0E497001ED349 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		86E1B0A522E0E498001ED349 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86E1B0A622E0E498001ED349 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -589,7 +733,6 @@
 		};
 		8672BC2D22DC6F14001D599D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0B75A6617D4A0E762F08124 /* Pods-Entree FederatieTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -611,7 +754,6 @@
 		};
 		8672BC2E22DC6F14001D599D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F688BBB052F24DCE3629843 /* Pods-Entree FederatieTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -628,6 +770,46 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Entree Federatie.app/Entree Federatie";
+			};
+			name = Release;
+		};
+		86E1B0A922E0E498001ED349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33721FB94FC1419A0CE61452 /* Pods-WikiWijs.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WikiWijs/WikiWijs.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HBX6JETZQ9;
+				INFOPLIST_FILE = WikiWijs/SupportFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kennisnet.WikiWijs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86E1B0AA22E0E498001ED349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E74737BBF73F5AC41C31135 /* Pods-WikiWijs.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WikiWijs/WikiWijs.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HBX6JETZQ9;
+				INFOPLIST_FILE = WikiWijs/SupportFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kennisnet.WikiWijs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -657,6 +839,15 @@
 			buildConfigurations = (
 				8672BC2D22DC6F14001D599D /* Debug */,
 				8672BC2E22DC6F14001D599D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86E1B0AB22E0E498001ED349 /* Build configuration list for PBXNativeTarget "WikiWijs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86E1B0A922E0E498001ED349 /* Debug */,
+				86E1B0AA22E0E498001ED349 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
