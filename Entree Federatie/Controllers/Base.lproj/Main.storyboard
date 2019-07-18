@@ -105,7 +105,9 @@
                                     <constraint firstAttribute="width" constant="160" id="w9o-AS-C2b"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Uitloggen"/>
+                                <state key="normal" title="Uitloggen">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="logout:" destination="Xoo-v1-uEj" eventType="touchUpInside" id="LL9-0P-NiT"/>
                                 </connections>

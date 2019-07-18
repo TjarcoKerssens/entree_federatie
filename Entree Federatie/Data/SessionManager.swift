@@ -57,6 +57,7 @@ class SessionManager: NSObject, WKHTTPCookieStoreObserver{
     
     private func authenticate(withCookies cookies: [HTTPCookie]){
         if userSessionCookieIsSet(inCookies: cookies){
+            setUsername(withCookies: cookies)
             validateSession(withCookies: cookies)
         }else{
             handler?.authenticated(false)
@@ -78,8 +79,8 @@ class SessionManager: NSObject, WKHTTPCookieStoreObserver{
             guard let data = data else {return}
             do{
                 guard let json = try JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary else { return }
-                guard let validSession = json["result"] as? Bool else {return}
-                self.handler?.authenticated(validSession)
+                guard let validSession = json["result"] as? String else {return}
+                self.handler?.authenticated(validSession.boolValue)
             }catch let error as NSError{
                 print("Error validating session: \(error.debugDescription)")
                 DispatchQueue.main.async {
@@ -119,5 +120,11 @@ class SessionManager: NSObject, WKHTTPCookieStoreObserver{
         }
         
         return cookies
+    }
+}
+
+extension String {
+    var boolValue: Bool {
+        return NSString(string: self).boolValue
     }
 }
