@@ -33,9 +33,13 @@ class HTMLParser {
             }else{
                 guard var data = result as? [String: String] else {return}
                 data = data.mapValues {$0.trimmingCharacters(in: .whitespacesAndNewlines)}
-                let jsonData = try! JSONSerialization.data(withJSONObject: data)
-                let properties = try! JSONDecoder().decode(ReferentieProperties.self, from: jsonData)
-                completionHandler(properties)
+                do {
+                    let jsonData = try JSONSerialization.data(withJSONObject: data)
+                    let properties = try JSONDecoder().decode(ReferentieProperties.self, from: jsonData)
+                    completionHandler(properties)
+                } catch {
+                    print("Could not get properties from the page")
+                }
             }
         }
     }

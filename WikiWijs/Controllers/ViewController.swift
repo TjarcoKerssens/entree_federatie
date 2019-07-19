@@ -13,7 +13,7 @@ let AUTH_ENDPOINT = "https://maken.wikiwijs.nl/"
 
 class ViewController: UIViewController {
     var webView: WKWebView?
-    let sessionManager = SessionManager.shared
+    let sessionManager = SessionManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()

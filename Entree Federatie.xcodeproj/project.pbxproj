@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5548CAC63C9379A9433C3FA4 /* Pods_WikiWijs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31722664788A040C7718106A /* Pods_WikiWijs.framework */; };
 		86453EC522E0F32E0092654E /* HTTPCookieArchiving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3622DCAF10001D599D /* HTTPCookieArchiving.swift */; };
+		86453EC822E1BABB0092654E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86453EC722E1BABB0092654E /* WelcomeViewController.swift */; };
 		8672BC1022DC6F13001D599D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC0F22DC6F13001D599D /* AppDelegate.swift */; };
 		8672BC1522DC6F13001D599D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8672BC1322DC6F13001D599D /* Main.storyboard */; };
 		8672BC1722DC6F14001D599D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8672BC1622DC6F14001D599D /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		37D3E50F9788867767B7AFB6 /* Pods-Entree Federatie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Entree Federatie.debug.xcconfig"; path = "Target Support Files/Pods-Entree Federatie/Pods-Entree Federatie.debug.xcconfig"; sourceTree = "<group>"; };
 		61F230D8425BDF4C5EEF3C7B /* Pods_Entree_Federatie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Entree_Federatie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86453EC622E0F65F0092654E /* WikiWijs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WikiWijs.entitlements; sourceTree = "<group>"; };
+		86453EC722E1BABB0092654E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		8672BC0C22DC6F13001D599D /* Entree Federatie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Entree Federatie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8672BC0F22DC6F13001D599D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8672BC1422DC6F13001D599D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				8672BC1822DC6F14001D599D /* LaunchScreen.storyboard */,
 				8672BC2F22DC7DD0001D599D /* LoginViewController.swift */,
 				8672BC3322DCA298001D599D /* MainViewController.swift */,
+				86453EC722E1BABB0092654E /* WelcomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86BD568F22E0A15D0001E1E0 /* HTTPManager.swift in Sources */,
+				86453EC822E1BABB0092654E /* WelcomeViewController.swift in Sources */,
 				8672BC3422DCA298001D599D /* MainViewController.swift in Sources */,
 				8672BC3722DCAF10001D599D /* HTTPCookieArchiving.swift in Sources */,
 				8672BC3022DC7DD0001D599D /* LoginViewController.swift in Sources */,

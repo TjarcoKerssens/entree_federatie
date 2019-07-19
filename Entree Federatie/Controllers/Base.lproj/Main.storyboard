@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="Y0K-lL-dlu">
             <objects>
-                <viewController id="UCM-mv-z86" sceneMemberID="viewController">
+                <viewController id="UCM-mv-z86" customClass="WelcomeViewController" customModule="Entree_Federatie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jhg-94-Ce9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,9 +172,11 @@
                         <outlet property="mailLabel" destination="iS0-wc-sn7" id="ukm-eY-tGy"/>
                         <outlet property="uidLabel" destination="YTQ-ri-V8p" id="pMK-dR-sZq"/>
                         <outlet property="usernameLabel" destination="5Ah-Eg-lCR" id="ozZ-KG-Fdv"/>
+                        <segue destination="xde-wn-r7g" kind="unwind" identifier="LogoutSegue" unwindAction="unwindToStartWithSegue:" id="F4W-4F-wxe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQt-vt-BSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="xde-wn-r7g" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1457" y="19"/>
         </scene>

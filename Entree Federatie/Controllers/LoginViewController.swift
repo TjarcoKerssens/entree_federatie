@@ -19,7 +19,7 @@ let AUTH_ENDPOINT = "https://referentie.entree.kennisnet.nl/saml/module.php/core
  */
 class LoginViewController: UIViewController, SAMLAuthenticationHandler, WKNavigationDelegate{
     var webView: WKWebView?
-    let sessionManager = SessionManager.shared
+    let sessionManager = SessionManager()
     var authenticated = false
     
     override func viewDidLoad() {
@@ -60,7 +60,7 @@ class LoginViewController: UIViewController, SAMLAuthenticationHandler, WKNaviga
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        if (authenticated) {
+        if authenticated {
             let parser = HTMLParser(webView: self.webView!)
             parser.parseReferentie(completionHandler: { (properties) in
                 self.performSegue(withIdentifier: "MainScreenSegue", sender: properties)

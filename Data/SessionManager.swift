@@ -23,10 +23,9 @@ class SessionManager: NSObject, WKHTTPCookieStoreObserver{
     let storage = SessionStorage()
     let httpManager = HTTPManager()
     
-    static let shared = SessionManager()
-    private override init() {
+    override init() {
         super.init()
-        WKWebsiteDataStore.default().httpCookieStore.add(self)
+        self.setObserver()
     }
     
     /**
@@ -65,7 +64,7 @@ class SessionManager: NSObject, WKHTTPCookieStoreObserver{
         cookieStore.getAllCookies { (cookies) in
             if self.userSessionCookieIsSet(inCookies: cookies){
                 self.saveCookies(cookies)
-                self.handler?.authenticated(true)
+                self.validateSession(withCookies: cookies)
             }
         }
     }
@@ -90,17 +89,36 @@ class SessionManager: NSObject, WKHTTPCookieStoreObserver{
                     return
                 }
                 self.handler?.authenticated(validSession.boolValue)
+                self.removeObserverIfDone(validSession.boolValue)
             }
         }
     }
     
+    /*
+        Remove this class as the observer of the cookiestore if the user is authenticated, in order to avoid
+        repeated calls to the handler.
+     */
+    private func removeObserverIfDone(_ done: Bool){
+        if done {
+            DispatchQueue.main.async {
+                WKWebsiteDataStore.default().httpCookieStore.remove(self)
+            }
+        }
+    }
+    
+    func setObserver(){
+        WKWebsiteDataStore.default().httpCookieStore.add(self)
+    }
+    
     func loadCookiesInto(webView: WKWebView){
+        setObserver()
         if let cookies = loadCookies(){
             webView.setCookies(cookies)
         }
     }
     
     private func saveCookies(_ cookies: [HTTPCookie]){
+        storage.remove()
         storage.set(cookies: cookies)
     }
     

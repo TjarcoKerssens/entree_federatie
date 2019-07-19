@@ -32,7 +32,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func logout(_ sender: Any) {
-        SessionManager.shared.removeSession()
-        self.dismiss(animated: true, completion: nil)
+        SessionManager().removeSession()
+        performSegue(withIdentifier: "LogoutSegue", sender: self)
     }
 }
