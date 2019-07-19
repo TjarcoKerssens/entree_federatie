@@ -1,0 +1,6 @@
+projectKey=KennisnetiOS
+serverUrl=http://localhost:9000
+serverVersion=7.4.0.18908
+dashboardUrl=http://localhost:9000/dashboard?id=KennisnetiOS
+ceTaskId=AWwKvbirECWMD2JvX3X3
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWwKvbirECWMD2JvX3X3

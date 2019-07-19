@@ -5,4 +5,4 @@ jQuery("table:first tbody tr").each(function(val, i){
           var value = data.last().text();
           properties[key] = value;
 });
-properties;
+properties; // This exposes the properties to the calback in Swift
