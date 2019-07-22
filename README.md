@@ -16,5 +16,6 @@ De classes in de mappen `Data` en `Extensions` kunnen gebruikt worden om een eig
 1. De applicatie heeft een webview nodig. Zie `LoginViewController` als voorbeeld
 2. De applicatie moet Keychain Sharing aanzetten: `Targets > Target_name > Capabilities > Keychain Sharing`.
 3. De Keychain Group moet gelijk gezet worden voor de applicaties. Gebruik `kennisnet.Entree-Federatie`.
+4. Bij alle applicaties moet `info.plist` een key-value pair bevatten met als key `AccesGroup` en als value `$(AppIdentifierPrefix)kennisnet.Entree-Federatie`
 
 

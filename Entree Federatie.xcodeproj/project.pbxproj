@@ -20,6 +20,7 @@
 		8672BC3722DCAF10001D599D /* HTTPCookieArchiving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3622DCAF10001D599D /* HTTPCookieArchiving.swift */; };
 		8672BC3A22DCC027001D599D /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3922DCC027001D599D /* SessionManager.swift */; };
 		8672BC3C22E06A2C001D599D /* SessionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3B22E06A2C001D599D /* SessionStorage.swift */; };
+		8691C39422E60AA600D9AF1C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86E1B0A822E0E498001ED349 /* Info.plist */; };
 		86BD568F22E0A15D0001E1E0 /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BD568E22E0A15D0001E1E0 /* HTTPManager.swift */; };
 		86E1B09022E0A993001ED349 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E1B08F22E0A993001ED349 /* HTMLParser.swift */; };
 		86E1B09322E0AA1B001ED349 /* ReferentieProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E1B09222E0AA1B001ED349 /* ReferentieProperties.swift */; };
@@ -395,6 +396,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8691C39422E60AA600D9AF1C /* Info.plist in Resources */,
 				86E1B0A722E0E498001ED349 /* LaunchScreen.storyboard in Resources */,
 				86E1B0A422E0E498001ED349 /* Assets.xcassets in Resources */,
 				86E1B0A222E0E497001ED349 /* Main.storyboard in Resources */,
