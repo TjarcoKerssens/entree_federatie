@@ -10,7 +10,6 @@ import Foundation
 import WebKit
 
 let UID_COOKIE = "aselect_uid"
-let COOKIE_KEYS = "CookieKeys"
 
 let VALIDATION_ENDPOINT = "https://ssoquery.aselect.entree.kennisnet.nl/openaselect/sso/ssoquery?response_url=https%3A%2F%2Freferentie.entree.kennisnet.nl&format=json"
 

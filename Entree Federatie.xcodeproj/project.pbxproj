@@ -19,8 +19,8 @@
 		8672BC3422DCA298001D599D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3322DCA298001D599D /* MainViewController.swift */; };
 		8672BC3722DCAF10001D599D /* HTTPCookieArchiving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3622DCAF10001D599D /* HTTPCookieArchiving.swift */; };
 		8672BC3A22DCC027001D599D /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3922DCC027001D599D /* SessionManager.swift */; };
-		8672BC3C22E06A2C001D599D /* SessionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3B22E06A2C001D599D /* SessionStorage.swift */; };
 		8691C39422E60AA600D9AF1C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86E1B0A822E0E498001ED349 /* Info.plist */; };
+		8691C39622E60DE700D9AF1C /* SessionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8691C39522E60DE700D9AF1C /* SessionStorage.swift */; };
 		86BD568F22E0A15D0001E1E0 /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BD568E22E0A15D0001E1E0 /* HTTPManager.swift */; };
 		86E1B09022E0A993001ED349 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E1B08F22E0A993001ED349 /* HTMLParser.swift */; };
 		86E1B09322E0AA1B001ED349 /* ReferentieProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E1B09222E0AA1B001ED349 /* ReferentieProperties.swift */; };
@@ -31,7 +31,6 @@
 		86E1B0A422E0E498001ED349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86E1B0A322E0E498001ED349 /* Assets.xcassets */; };
 		86E1B0A722E0E498001ED349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E1B0A522E0E498001ED349 /* LaunchScreen.storyboard */; };
 		86E1B0AC22E0E4FB001ED349 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3922DCC027001D599D /* SessionManager.swift */; };
-		86E1B0AD22E0E4FB001ED349 /* SessionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8672BC3B22E06A2C001D599D /* SessionStorage.swift */; };
 		86E1B0AE22E0E4FB001ED349 /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BD568E22E0A15D0001E1E0 /* HTTPManager.swift */; };
 		FC9777F7E791851F1AE5BAF0 /* Pods_Entree_Federatie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F230D8425BDF4C5EEF3C7B /* Pods_Entree_Federatie.framework */; };
 /* End PBXBuildFile section */
@@ -68,7 +67,7 @@
 		8672BC3322DCA298001D599D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8672BC3622DCAF10001D599D /* HTTPCookieArchiving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPCookieArchiving.swift; sourceTree = "<group>"; };
 		8672BC3922DCC027001D599D /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
-		8672BC3B22E06A2C001D599D /* SessionStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStorage.swift; sourceTree = "<group>"; };
+		8691C39522E60DE700D9AF1C /* SessionStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStorage.swift; sourceTree = "<group>"; };
 		86BD568D22E077060001E1E0 /* Entree Federatie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Entree Federatie.entitlements"; sourceTree = "<group>"; };
 		86BD568E22E0A15D0001E1E0 /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
 		86E1B08F22E0A993001ED349 /* HTMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
@@ -189,8 +188,8 @@
 				86E1B09122E0AA04001ED349 /* Models */,
 				86E1B08E22E0A97C001ED349 /* ParseHTML */,
 				8672BC3922DCC027001D599D /* SessionManager.swift */,
-				8672BC3B22E06A2C001D599D /* SessionStorage.swift */,
 				86BD568E22E0A15D0001E1E0 /* HTTPManager.swift */,
+				8691C39522E60DE700D9AF1C /* SessionStorage.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -509,7 +508,7 @@
 				8672BC3A22DCC027001D599D /* SessionManager.swift in Sources */,
 				86E1B09322E0AA1B001ED349 /* ReferentieProperties.swift in Sources */,
 				86E1B09022E0A993001ED349 /* HTMLParser.swift in Sources */,
-				8672BC3C22E06A2C001D599D /* SessionStorage.swift in Sources */,
+				8691C39622E60DE700D9AF1C /* SessionStorage.swift in Sources */,
 				8672BC1022DC6F13001D599D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,7 +525,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86E1B0AD22E0E4FB001ED349 /* SessionStorage.swift in Sources */,
 				86E1B09F22E0E497001ED349 /* ViewController.swift in Sources */,
 				86E1B0AE22E0E4FB001ED349 /* HTTPManager.swift in Sources */,
 				86453EC522E0F32E0092654E /* HTTPCookieArchiving.swift in Sources */,
